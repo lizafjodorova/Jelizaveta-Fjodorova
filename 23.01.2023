@@ -1,0 +1,74 @@
+/* File Handling with C++ using ifstream & ofstream class object*/
+/* To write the Content in File*/
+/* Then to read the content of file*/
+#include <iostream>
+
+/* fstream header file for ifstream, ofstream,
+fstream classes */
+#include <fstream>
+#include <string>
+using namespace std;
+
+// Driver Code
+int main()
+{
+	string mystring;
+	int i = 0;
+	ofstream myfile;
+	myfile.open("c.txt", ios::app);
+
+	do {
+		i++;
+		cout << "what do you want to say?" << endl;
+		
+		getline(cin, mystring);
+		myfile << mystring << endl;
+	} while (i != 15);
+
+	myfile.close();
+	return 0;
+}
+
+
+int DisplayResourceNAMessageBox()
+{
+    int msgboxID = MessageBox(
+        NULL,
+        (LPCWSTR)L"Resource not available\nDo you want to try again?",
+        (LPCWSTR)L"Account Details",
+        MB_ICONWARNING | MB_CANCELTRYCONTINUE | MB_DEFBUTTON2
+    );
+
+    switch (msgboxID)
+    {
+    case IDCANCEL:
+        // TODO: add code
+        break;
+    case IDTRYAGAIN:
+        // TODO: add code
+        break;
+    case IDCONTINUE:
+        // TODO: add code
+        break;
+    }
+
+    return msgboxID;
+}int main()
+
+using namespace std;
+ 
+int main() {
+    ifstream myReadFile;
+    myReadFile.open("text.txt");
+    char output[100];
+    if (myReadFile.is_open.()) {
+        while (!myReadFile.eof()) {
+
+            myReadFile >> output;
+            cout << output;
+
+        }
+    }
+    myRealFile.close();
+    return 0;
+}
