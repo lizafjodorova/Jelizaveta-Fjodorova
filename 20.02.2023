@@ -1,0 +1,100 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+int main()
+{
+	/*vector <int> num{1,2,3,1,2};
+	int i = 0;
+
+		do {
+			if (num[i] == 1)cout << "atradu 1 ";
+			i++;
+
+		} while (i < num.size());
+		i = 0;
+   do {
+	   if (num[i] == 4)cout << "atradu 4 ";
+	   i++;
+
+   } while (i < num.size()); */
+
+
+	/*vector<string>country{"USA","UK","CH","IN","CA","AU"};
+	vector<string>code{ "+1","+44","+86","+91","+1","+61" };
+	cout << "ievadi kodu" << endl;
+	string c1;
+	cin >> c1;
+
+	int i = 0;
+	do {
+		if (code[i] == c1)cout << country[i];
+		i++;
+	} while (i < code.size());
+
+	vector<string>name{ "Anna","Antons","Vlads","Artemijs" };
+	vector<int>note{ 3,8,7,4 };
+	cout << "ievadi atzīmi" << endl;
+	int c1;
+	cin >> c1;
+
+	int i = 0;
+	do {
+		if (note[i] == c1) cout << name[i] << "";
+		i++;
+	} while (i < note.size())*/
+}
+/*#include <iostream>
+#include <vector>
+using namespace std;
+int main()
+{
+	vector<int>num{ 2,3,5,7 };
+	cout << "Ievadīt skaitli" << endl;
+	int c1;
+	cin >> c1;
+	int i = 0;
+	do {
+		cout << num[i] * num[i] << endl;
+		i++;
+	} while (i < num.size());
+}
+
+#include <iostream>
+#include <vector>
+using namespace std;
+int main()
+{
+	vector<string>date{ "11. novembris","18. novembris" };
+	vector<int>name{ " Lāčplēša diena", " Latvijas Republikas proklamēšanas diena" };
+	cout << " Jūs griba t redzēt svētkus?" << endl;
+	string answer;
+	bool art = false;
+	cin >> answer;
+
+	int i = 0;
+	do {
+		if (answer == "yes")
+		{
+			cout << holidays[i] << endl;
+			i++;
+			atr = true;
+		}
+	} while (i < data.size());
+
+	if (atr == false) cout << "Good bye";
+}*/
+
+#include <iostream>
+#include <vector>
+using namespace std;
+int main()
+{
+	vector<int>sk{-1,+2,-4,0,+2, -1, 0, +3,-3,+2 };
+	int i = 0, k = 0;
+
+	do {
+		if (sk[i] > 0) { k++; }
+		i++;
+	} while (i < sk.size());
+	cout << k;
+
